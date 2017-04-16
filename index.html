@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHARMACY</title>
+
+</head>
+<center>
+    <body>
+    <h1>  PHARMACY  </h1>
+    <form action="/new" method="POST">
+        <table width="450px">
+            <tr>
+                <td>
+                    <label for="drugID">Drug ID:</label>
+                </td>
+                <td>
+                    <input type="drugID" name="drugID" maxlength="30" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="drugname">Drug Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="drugname" maxlength="30" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="quantity">Quantity:</label>
+                </td>
+                <td>
+                    <input type="number" name="quantity" maxlength="30" size="20">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="mdate">Manufactured Date : </label>
+                </td>
+                <td>
+                    <input type="date" name="mdate" maxlength="50" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="edate">Expiration Date:</label>
+                </td>
+                <td>
+                    <input type="date" name="edate" maxlength="50" size="30">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <center><center>
+                        <input type="submit"maxlength="50" size="30">
+                    </center></center>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <br><br>
+    <a href="/view">Load Data</a>
+    <br>
+    <a href="/kk">Edit Data</a>
+    </body>
+</center>
+<section class="delete">
+    <h3>Delete Data</h3>
+    <form action="/kk" method="post">
+        <div class="input">
+            <label for="id"></label>
+            <input type="text" id="id" name="id">
+        </div>
+        <button type="submit">Delete</button>
+    </form>
+
+</section>
+</html>
