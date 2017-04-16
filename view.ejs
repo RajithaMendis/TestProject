@@ -1,0 +1,41 @@
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 5px;
+        text-align: left;
+    }
+    table#t01 {
+        width: 100%;
+        background-color: #f1f1c1;
+    }
+</style>
+
+<table id="t01" >
+    <tr>
+        <th>Drug Id</th>
+        <th>Drug Name</th>
+        <th>Quantity</th>
+        <th>Manufactured Date</th>
+        <th>Expiration Date</th>
+
+    </tr>
+
+
+    <% for(var i=0; i<users.length; i++) {%>
+
+        <tr>
+            <td><%=users[i]._id %></td>
+            <td><%=users[i].drugname %></td>
+            <td><%=users[i].quantity%></td>
+            <td><%=users[i].mdate%></td>
+            <td><%=users[i].edate%></td>
+
+        </tr>
+
+    <% } %>
+
+
+</table>
