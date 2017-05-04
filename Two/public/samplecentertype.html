@@ -1,0 +1,25 @@
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Sample Center Types</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="sampleCenterType in sampleCenterTypes">
+            <td>{{sampleCenterType.sampleCenterTypeName}}</td>
+            <td ng-model="sampleCenterType._id" ng-click="deleteSampleCenterType(sampleCenterType)">DELETE</td>
+        </tr>
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td>Sample Center Type: </td>
+            <td><input ng-model="sampleCenterType.sampleCenterTypeName"></td>
+        </tr>
+        <tr>
+            <td><button ng-click="addSampleCenterType(sampleCenterType)">Add New Sample Center</button> </td>
+        </tr>
+    </table>
+
+</div>
