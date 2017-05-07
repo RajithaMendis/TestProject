@@ -4,9 +4,11 @@ const mongoose=require('mongoose');
 
 mongoose.Promise=global.Promise;
 require('./models/sampleCenterType.model.js');
-
+require('./models/fieldmodel.js');
+require('./models/labTest.model.js');
 const SampleCenterTypeRouter=require('./routes/sampleCenterType.route.js');
-
+const FieldRouter=require('./routes/field.route.js');
+const LabTestRouter=require('./routes/labTest.route.js');
 const app=express();
 
 app.use(bodyParser.json());
@@ -21,6 +23,8 @@ app.get('/',(req,res,next)=>{
     res.sendFile(__dirname+'/public/index.html');
 });
 app.use('/sampleCenterTypes',SampleCenterTypeRouter);
+app.use('/fields',FieldRouter);
+app.use('/labTests',LabTestRouter);
 app.get('/app/*',(req,res,next)=>{
    res.sendFile(__dirname+'/public/index.html');
 });
