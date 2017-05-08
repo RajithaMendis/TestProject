@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" ng-app="LoginApp">
+    <title>Doctor</title>
+
+    <!--select css-->
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <!--angularjs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+
+</head>
+<body>
+
+<div id="select" ng-controller="controllers">
+
+    <img src="http://his.sliit.lk/Laboratory/assets/images/newlogofinal.png" style="width:200px;"/>
+    <form>
+        <button type="button" ng-click="Add()">Add New Prescription</button>
+        <button type="button" ng-click="Veiw()">Veiw Prescription</button>
+        <button type="button" ng-click="VeiwResults()">Veiw Test Results</button>
+    </form>
+
+</div>
+<br>
+
+<div id="VeiwTable" ng-controller="controllers">
+    <h1 align="center">Test Results</h1><br><br><br>
+
+
+
+</div>
+
+
+</body>
+</html>
