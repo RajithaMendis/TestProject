@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LoginApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor</title>
+
+    <!--select css-->
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <!--angularjs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+
+</head>
+<body>
+
+<div id="select" ng-controller="controllers">
+
+    <img src="http://his.sliit.lk/Laboratory/assets/images/newlogofinal.png" style="width:200px;"/>
+    <form>
+        <button type="button" ng-click="Add()">Add New Prescription</button>
+        <button type="button" ng-click="Veiw()">Veiw Prescription</button>
+        <button type="button" ng-click="VeiwResults()">Veiw Test Results</button>
+    </form>
+
+</div>
+<br>
+<div id="others" ng-controller="controllers">
+    <h1 align="center">New Prescription</h1><br><br><br>
+    <form id="LabTest" name="LabTest">
+    Category:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="category" ng-model="category"><br><br>
+    Sub Category:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="subCat" ng-model="subCat"><br><br>
+    Test Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="TestName" ng-model="TestName"><br><br>
+    Test Description:&nbsp;&nbsp;<textarea name="Description" form="LabTest">Enter text here...</textarea><br><br><br>
+        <button type="button" onclick="location.href = 'DoctorHome.html'">Add</button>   <!--ng-click="clicked()"-->
+    </form>
+</div>
+</body>
+</html>

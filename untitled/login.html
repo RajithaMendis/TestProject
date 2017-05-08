@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="LoginApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+
+    <!--login css-->
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <!--angularjs-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+<div id="login" ng-controller="controllers">
+
+    <!-- /.login-logo -->
+
+    <img src="http://his.sliit.lk/Laboratory/assets/images/newlogofinal.png" style="width:200px;" />
+
+    <form id="f1">
+        Username: <input type="text" id="username" ng-model="username"><br><br>
+        Password: <input type="password" id="password" ng-model="password"><br><br>
+        <button type="button" onclick="location.href = 'DoctorHome.html'">Login</button>   <!--ng-click="clicked()"-->
+
+    </form>
+</div>
+
+<script src="js/app.js"></script>
+<script src="login.html"></script>
+
+
+<script src="app.js"></script>
+<script src="controllers.js"></script>
+<script src="services.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+</html>
